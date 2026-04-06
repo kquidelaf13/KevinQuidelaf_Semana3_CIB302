@@ -28,6 +28,7 @@ header p {
     font-size: 1.2em;
     opacity: 0.9;
 }
+/* Navegación */
 nav {
     margin-top: 20px;
 }
@@ -119,7 +120,12 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 1s ease forwards;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-in:nth-child(1) { animation-delay: 0.2s; }
@@ -168,3 +174,4 @@ footer {
     border-top: 1px solid #444;
     padding-top: 10px;
 }
+/* Fin del pie de pagina y del CSS */
